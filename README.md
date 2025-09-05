@@ -22,8 +22,8 @@ It empowers users to stay safe online by quickly analyzing suspicious texts like
 ### Installation
 Clone the repository:
 ```bash
-git clone https://github.com/<your-username>/digital-armor.git
-cd digital-armor
+git clone https://github.com/manoj1-008/Scam-message-detector
+cd Scam-message-detector
 Install dependencies:
 
 bash
@@ -35,27 +35,15 @@ Copy code
 streamlit run app.py
 📊 Example Usage
 Input Message:
-
-vbnet
-Copy code
 Your account is blocked. Click here to restore.
 Output:
-
-java
-Copy code
 🚨 Scam Detected (Confidence: 95%)
 Input Message:
-
-sql
-Copy code
 Hi Manoj, are we still meeting tomorrow at 10 AM?
 Output:
-
-java
-Copy code
 ✅ Safe Message (Confidence: 90%)
 📸 Screenshot
-(Add a screenshot of your app interface here)
+<img width="1892" height="965" alt="image" src="https://github.com/user-attachments/assets/6efba1b3-6cc8-4008-a5cd-5d94ec49e4bb" />
 
 👨‍💻 Author
 Manoj Choppa
