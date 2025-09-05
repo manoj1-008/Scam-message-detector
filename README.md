@@ -1,59 +1,40 @@
-# 🛡️ Digital Armor - Scam Message Detector
+🛡️ Digital Armor – Scam Message Detector
 
-## 🔍 Overview
-**Digital Armor** is an AI-powered tool that helps detect whether a message is **🚨 Scam** or **✅ Safe**.  
-It empowers users to stay safe online by quickly analyzing suspicious texts like fake job offers, phishing alerts, or fraud messages.
+Inspiration
+Every day, thousands of people fall victim to online scams — fake job offers, phishing emails, and fraudulent messages. I wanted to create a tool that helps ordinary users detect scams instantly and safely browse digital platforms.
 
-## ✨ Features
-- 🔎 Paste any text message and analyze instantly  
-- 🚨 Detects common scam patterns (fake offers, blocked accounts, urgent actions)  
-- ✅ Shows confidence levels for predictions  
-- 🎨 Simple and user-friendly Streamlit interface  
-- ⚡ Lightweight, fast, and beginner-friendly  
+What it does
+Digital Armor uses AI to analyze text messages, emails, or job alerts and predicts whether they are 🚨 Scam or ✅ Safe. It also shows a confidence score to help users make informed decisions.
 
-## 🛠️ Built With
-- Python  
-- [Streamlit](https://streamlit.io/) – UI framework  
-- [Requests](https://pypi.org/project/requests/) – API integration  
-- Hugging Face / Keyword detection – Scam classification  
+How we built it
 
-## 🚀 Getting Started
+Frontend: Streamlit for a simple, interactive UI.
 
-### Installation
-Clone the repository:
-```bash
-git clone https://github.com/manoj1-008/Scam-message-detector
-cd Scam-message-detector
-Install dependencies:
+Backend AI: mrm8488/bert-tiny-finetuned-sms-spam-detection model via Hugging Face Inference API.
 
-bash
-Copy code
-pip install -r requirements.txt
-Run the app
-bash
-Copy code
-streamlit run app.py
-📊 Example Usage
-Input Message:
-Your account is blocked. Click here to restore.
-Output:
-🚨 Scam Detected (Confidence: 95%)
-Input Message:
-Hi Manoj, are we still meeting tomorrow at 10 AM?
-Output:
-✅ Safe Message (Confidence: 90%)
-📸 Screenshot
-<img width="1892" height="965" alt="image" src="https://github.com/user-attachments/assets/6efba1b3-6cc8-4008-a5cd-5d94ec49e4bb" />
+Extras: Fallback keyword detection for urgent or suspicious messages.
 
-👨‍💻 Author
-Manoj Choppa
-(Developer & Cybersecurity Enthusiast)
+Deployment: Live on Streamlit sharing / Hugging Face Spaces.
 
-yaml
-Copy code
+Challenges we faced
 
----
+Managing API response times to avoid timeouts.
 
-👉 This README will look **professional** on GitHub and is **ready for hackathon submission**.  
+Ensuring clear UX while providing accurate scam detection.
 
-Do you want me to also prepare a **short Devpost write-up** (Inspiration, How we built it
+Accomplishments
+
+Fully functional prototype analyzing messages in seconds.
+
+Publicly accessible live demo.
+
+Simple interface that’s easy for any user to test their messages.
+
+Built with
+Python, Streamlit, Requests, Hugging Face API, Regex
+
+Try it out
+
+Live App: https://scam-message-detector-ej5cwpvzxvqqejfnfrofpu.streamlit.app/
+
+Code Repo: https://github.com/manoj1-008/Scam-message-detector
